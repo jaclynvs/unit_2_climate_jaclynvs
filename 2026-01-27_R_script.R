@@ -89,5 +89,11 @@ lines(mass_Gt ~ decimal_date,
 min(ant_ice_loss$mass_Gt)
 min(grn_ice_loss$mass_Gt)
 
+# open up a plotting device
+pdf("figures/ice_mass_trends.pdf", width = 7, height = 5)
+
 barplot(height = c(min(ant_ice_loss$mass_Gt), min(grn_ice_loss$mass_Gt))*(-1),
         names.arg = c("Antactica", "Greenland"))
+
+# close the plotting window
+dev.off()
