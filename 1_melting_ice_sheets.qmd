@@ -48,7 +48,7 @@ Go to the website and register yourself as a NASA Earthdata user. From there you
 
 #### Read in and explore data
 
-Use `read.table()` to read in the `.txt` data. There are 3 columns, the decimal date, the mass loss (in Gigatonnes) and one sigma (i.e. one standard deviation in Gigatonnes). We use the default separator `sep=""` which distinguishes column data by looking for white space. We skip the first 31 lines of the `.txt` file because that's all header (metadata). We manually code the column names after reading the header.
+Use `read.table()` to read in the `.txt` data. There are 3 columns, the decimal date, the mass loss (in Gigatonnes) and one sigma (i.e. one standard deviation in Gigatonnes). We use the default separator `sep=""` which distinguishes column data by looking for white space. We skip the first 31 lines of the `.txt` file because that's all header (metadata). We manually code the column names after reading the header.()
 
 ```{r}
 ant_ice_loss = read.table("data/antarctica_mass_200204_202505.txt", 
